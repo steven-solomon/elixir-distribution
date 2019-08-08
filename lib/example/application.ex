@@ -8,8 +8,6 @@ defmodule Example.Application do
   def start(_type, _args) do
     import Supervisor.Spec
 
-    Application.get_env(:libcluster, :topologies)
-
     topologies = Application.get_env(:libcluster, :topologies)
 
     children = [
