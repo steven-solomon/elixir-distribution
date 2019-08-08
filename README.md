@@ -19,7 +19,7 @@ There are a few concepts that are integral to undestanding this document. They a
 
 *Application* - is a runnable set of code, that has a predefined directory structure. 
 
-## Motiviation 
+## Motivation 
 Since an application instance is part of a `Cluster`, we want to be able to have `Node`s automatically join and leave a `Cluster` upon starting, this is achieved using a library called `libcluster`. 
 
 We have a use-case where we want to ensure that there is only one instance of the Singleton module for all `Node`s. Singleton is a `GenServer` that just loops, and prints out the text "I am singleton, hear me roar" to standard out.
