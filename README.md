@@ -107,12 +107,12 @@ You should notice two things occur:
 We have now seen that there is only one Singleton running in the entire `Cluster`. We observe this by "I am singleton, hear me roar" only being printed to one terminal. 
 
 ## What did we lose?
-This might seem like a good solution, however let's try closing the window that is currently printing out "I am singleton, hear me roar" you will notice that no other Node begins printing "I am singleton, hear me roar". We have only guarenteed that Singleton is unique, not that it is fault tolerant. As a result, this is not a good solution to use in production code.
+This might seem like a good solution, however let's try closing the window that is currently printing out "I am singleton, hear me roar". You will notice that no other Node begins printing "I am singleton, hear me roar". 
+
+We have only guarenteed that Singleton is unique, not that it is fault tolerant. As a result, this is not a good solution to use in production code.
 
 # Conclusion
 
-This document goes over some of the key concepts to understanding how to Cluster Elixir Nodes together. We then discussed some the usage of the `:global` flag, and the uniqueness it gives us for a Process in a Cluster. Lastly, we saw the shortcomings of this approach, namely that this is a **NOT** a fault tolerant solution.
-
-More research has to be done in order to give that guarentee.
+This document goes over some of the key concepts to understanding how to Cluster Elixir Nodes together. We then discussed some the usage of the `:global` flag, and the uniqueness it gives us for a Process in a Cluster. Lastly, we saw the shortcomings of this approach, namely that this is a **NOT** a fault tolerant solution. More research has to be done in order to give that guarentee.
 
 
