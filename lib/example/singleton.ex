@@ -6,7 +6,7 @@ defmodule Singleton do
   end
 
   def init(:ok) do
-    {:ok, :wibble, 1000}
+    {:ok, :state_does_not_matter, 1000}
   end
 
   def handle_info(:timeout, state) do
